@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "iK6ZO4KLPYjY+j/TVcdi3AyMnzByIB893vzX3n338HtvX7Ul5VjNfuYH0jsDRgsVHdYLTm8DrUKsGjTIyUhYiA==",
+  "dgSpecHash": "8xwb0KDyC/kBY+Fw0RGHq6ix6gIVfM3BdXgTI+Vu/QtCs6/YOqGp9USdIpxIIRMyqApf9+dMNMGZkRluLyB5YQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\documents\\csharptodo\\core\\Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.13\\microsoft.aspnetcore.spaservices.extensions.5.0.13.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

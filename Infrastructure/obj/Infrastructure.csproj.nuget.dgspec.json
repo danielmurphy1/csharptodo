@@ -4,14 +4,14 @@
     "C:\\Users\\danie\\documents\\csharptodo\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\documents\\csharptodo\\core\\Core.csproj": {
+    "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\documents\\csharptodo\\core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\core\\Core.csproj",
+        "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\documents\\csharptodo\\core\\obj\\",
+        "outputPath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -90,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\danie\\documents\\csharptodo\\core\\Core.csproj": {
-                "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\core\\Core.csproj"
+              "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj"
               }
             }
           }
@@ -105,6 +111,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

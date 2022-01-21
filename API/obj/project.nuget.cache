@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "IG7SIVIOUEyHAyMAdoHpaM5dILGy89f5U4LJcU4qvagb5y4VucnTKU82i3GeMPEcTOwiXsVOyAZb9hZsCYY16A==",
+  "dgSpecHash": "wM2dTxkjj9xEf4i+j7IlypMVC3uUX4gHgyP3Bmurtzj7fI9vCBqcIq01tniEC0Q6r15YfPttAgb+que1sicr1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\documents\\csharptodo\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\danie\\documents\\csharptodo\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.13\\microsoft.aspnetcore.spaservices.extensions.5.0.13.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
