@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "uFLIP+07t80SuwOZE74mlMeh7xyOHKLU3iDsRQQKrGeHPttjpwS6wQrTQFpdmTVQRuNsxoXdOPEHQCjThFE28Q==",
-=======
-  "dgSpecHash": "VDUSF/TR6FTDe0AcN8VbasOCY7Tg6TustukpE1AYz+KGwCge8DJj0Lmy4Mf4e02avymZFxDzOYkhf+UcRkTplg==",
->>>>>>> c57ee6b2fbfb681747483793b6054a42fa3bf255
+  "dgSpecHash": "X51a5a+npZ4f8Ufq3w6wS7FM9QAr3NsuEJD4Om7egEOFMB6UC7CMM/3uBaYoi7IHXF/kzVL7H3QM933z4NQNIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -14,5 +10,12 @@
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
