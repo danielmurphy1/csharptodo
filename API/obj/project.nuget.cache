@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "MQAnK0YlaXvi9bI3wy1/3H5m1Pw5HJHt43raPHDFcqHWyfBt+oZcCyml8Uc0+LXbVzlzEfSld+Kr1QIA1P90KQ==",
-=======
-  "dgSpecHash": "6ZyXZ6n2Kbm8BAMnu9ohebNTQlqfh9N0PFachscMwCE5AHUbOL2BNj8dCQapGdsNIlZ8K2lscQbPlat6lAUMww==",
->>>>>>> c57ee6b2fbfb681747483793b6054a42fa3bf255
+  "dgSpecHash": "TSYu9u4FUDVevca5+SrL/PcmQTslx/KR9u23fY4Ba9wKmnOX8jfoVZqX95a8URpLY72vu8A/3RGPjEnB4/pWkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.13\\microsoft.aspnetcore.spaservices.extensions.5.0.13.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -18,7 +14,15 @@
     "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\danie\\Documents\\csharptodo\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
