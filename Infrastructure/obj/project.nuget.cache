@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "uFLIP+07t80SuwOZE74mlMeh7xyOHKLU3iDsRQQKrGeHPttjpwS6wQrTQFpdmTVQRuNsxoXdOPEHQCjThFE28Q==",
+=======
+  "dgSpecHash": "VDUSF/TR6FTDe0AcN8VbasOCY7Tg6TustukpE1AYz+KGwCge8DJj0Lmy4Mf4e02avymZFxDzOYkhf+UcRkTplg==",
+>>>>>>> c57ee6b2fbfb681747483793b6054a42fa3bf255
   "success": true,
   "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
