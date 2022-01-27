@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TSYu9u4FUDVevca5+SrL/PcmQTslx/KR9u23fY4Ba9wKmnOX8jfoVZqX95a8URpLY72vu8A/3RGPjEnB4/pWkg==",
+  "dgSpecHash": "xdDTF7HKIi3IkBe66xgPdN1W2O5MYC180B69UwRbZrp9qNPsSrCMCC8Vx4Ko/2l+UrVGI/joEIqOKoZxl0p+AA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.13\\microsoft.aspnetcore.spaservices.extensions.5.0.13.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -17,12 +17,5 @@
     "C:\\Users\\danie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\danie\\Documents\\csharptodo\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
