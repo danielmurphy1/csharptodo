@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8xwb0KDyC/kBY+Fw0RGHq6ix6gIVfM3BdXgTI+Vu/QtCs6/YOqGp9USdIpxIIRMyqApf9+dMNMGZkRluLyB5YQ==",
+  "dgSpecHash": "+Lpovn5ygk7Uaj8X59Aszje0bmi6ahCpYgv++nelFE9lkhyDs6UxuwsTMRDzve4rP0wF8QitlvTfPxsuLyDUTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\danie\\Documents\\csharptodo\\core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.13\\microsoft.aspnetcore.spaservices.extensions.5.0.13.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",

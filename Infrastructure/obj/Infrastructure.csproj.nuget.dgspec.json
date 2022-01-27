@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\documents\\csharptodo\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj": {
+    "C:\\Users\\danie\\Documents\\csharptodo\\core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\danie\\Documents\\csharptodo\\core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\danie\\Documents\\csharptodo\\core\\Core.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\obj\\",
+        "outputPath": "C:\\Users\\danie\\Documents\\csharptodo\\core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\danie\\documents\\csharptodo\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\documents\\csharptodo\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\documents\\csharptodo\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\danie\\Documents\\csharptodo\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\danie\\documents\\csharptodo\\Core\\Core.csproj"
+              "C:\\Users\\danie\\Documents\\csharptodo\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\danie\\Documents\\csharptodo\\Core\\Core.csproj"
               }
             }
           }
