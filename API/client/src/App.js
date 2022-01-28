@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-
-import Test from './Components/Test';
+import Header from './Components/Header';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
       <Container className="App">
-        <Test />
+        <Header />
       </Container>
 
 
