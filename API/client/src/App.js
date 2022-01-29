@@ -18,13 +18,14 @@ function App() {
     console.log(enteredToDoInput);
     setTodos([...todos, enteredToDoInput]);
     console.log(todos);
+    inputTextRef.current.value = "";
   }
 
   return (
       <Container className="App">
         <Header />
         <InputForm inputTextRef={inputTextRef} handleAddToDo={handleAddToDo} />
-        <ToDoList />
+        <ToDoList todos={todos}/>
       </Container>
 
 
