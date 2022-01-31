@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Core;
+using Core.Models;
 using Npgsql;
+using Infrastructure.ToDoQueryServices;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,19 +18,13 @@ namespace API.Controllers
 
         // GET: api/<ToDosController>
         [HttpGet]
-        public string Get()
+        public List<ToDoModel> Get()
         {
-            DatabaseConnection dbConnection = new DatabaseConnection();
-            var connection = dbConnection.GetConnection();
-            NpgsqlCommand command  = new NpgsqlCommand("SELECT 'Hello World' FROM test_todos_info", connection);
-            var reader = command.ExecuteReader();
-            string value = "";
-            while (reader.Read())
-            {
-                value = reader.GetString(0);
-            }
+            var getToDoService = new GetToDoService();
+            var todos = getToDoService.GetTodos();
 
-            return value;
+            return todos;
+
         }
 
         // GET api/<ToDosController>/5

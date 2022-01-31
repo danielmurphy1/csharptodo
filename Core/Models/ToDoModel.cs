@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Models
 {
-    internal class ToDoModel
+    public class ToDoModel
     {
         public int Id { get; set; }
         public string Text { get; set; }
