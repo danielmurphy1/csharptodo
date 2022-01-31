@@ -20,7 +20,7 @@ namespace API.Controllers
         {
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
-            NpgsqlCommand command  = new NpgsqlCommand("SELECT todo_text FROM test_todos_info", connection);
+            NpgsqlCommand command  = new NpgsqlCommand("SELECT 'Hello World' FROM test_todos_info", connection);
             var reader = command.ExecuteReader();
             string value = "";
             while (reader.Read())
