@@ -1,10 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from './Components/Header';
 import InputForm from './Components/InputForm';
 import ToDoList from './Components/ToDoList';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 
 function App() {
@@ -20,6 +21,16 @@ function App() {
     console.log(todos);
     inputTextRef.current.value = "";
   }
+
+  async function getToDos(){
+    const response = await axios.get('/api/todos');
+    const newToDos = response.data;
+    setTodos(newToDos);
+  }
+
+  useEffect(() => {
+    getToDos();
+  }, []);
 
   return (
       <Container className="App">
