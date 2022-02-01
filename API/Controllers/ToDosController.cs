@@ -36,8 +36,13 @@ namespace API.Controllers
 
         // POST api/<ToDosController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ToDoModel Post([FromBody] ToDoModel todo)
         {
+            var postToDoService = new PostToDoService();
+            var text = todo.Text;
+            var newTodo = postToDoService.PostToDo(text);
+
+            return new ToDoModel { Text = text };
         }
 
         // PUT api/<ToDosController>/5
