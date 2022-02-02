@@ -11,23 +11,21 @@ namespace Infrastructure.ToDoQueryServices
 {
     public class PostToDoService
     {
-        public List<ToDoModel> PostToDo(string text)
+        public ToDoModel PostToDo(string text)
         {
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
-            var newToDo = new List<ToDoModel>();
-            using var command = new NpgsqlCommand("INSERT INTO test_todos_info (todo_text, is_complete, created_at) VALUES ($1, $2, NOW()) RETURNING *", connection)
+            using var command = new NpgsqlCommand("INSERT INTO test_todos_info (todo_text) VALUES (@p1)", connection)
             {
                 Parameters =
                 {
-                    new() { Value = text},
-                    new() { Value = false}
+                    new NpgsqlParameter("p1", text)
                 }
-
             };
 
-            command.ExecuteNonQueryAsync();
-            return newToDo;
+            command.ExecuteNonQuery(); 
+                                       
+            return new ToDoModel { Text = text };
         }
     }
 }
