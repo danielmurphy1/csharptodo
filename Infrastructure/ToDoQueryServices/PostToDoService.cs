@@ -15,7 +15,8 @@ namespace Infrastructure.ToDoQueryServices
         {
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
-            using var command = new NpgsqlCommand("INSERT INTO test_todos_info (todo_text) VALUES (@p1)", connection)
+            var newTodo = new ToDoModel();
+            using var command = new NpgsqlCommand("INSERT INTO test_todos_info (todo_text) VALUES (@p1) RETURNING *", connection)
             {
                 Parameters =
                 {
@@ -23,9 +24,19 @@ namespace Infrastructure.ToDoQueryServices
                 }
             };
 
-            command.ExecuteNonQuery(); 
-                                       
-            return new ToDoModel { Text = text };
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                newTodo = new ToDoModel
+                {
+                    Id = reader.GetInt32(0),
+                    Text = text,
+                    IsComplete = reader.GetBoolean(2),
+                    CreatedAt = reader.GetDateTime(3)
+                };
+            }
+            return newTodo;
         }
     }
 }

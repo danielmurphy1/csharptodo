@@ -41,7 +41,7 @@ namespace API.Controllers
             var postToDoService = new PostToDoService();
             var text = todo.Text;
 
-            return postToDoService.PostToDo(text); 
+            return postToDoService.PostToDo(text);
         }
 
         // PUT api/<ToDosController>/5
