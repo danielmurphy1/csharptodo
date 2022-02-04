@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from './Components/Header';
 import InputForm from './Components/InputForm';
@@ -10,6 +10,7 @@ import axios from 'axios';
 
 function App() {
   const inputTextRef = useRef();
+  const [ isChecked, setIsChecked ] = useState(false);
   const [ todos, setTodos ] = useState([]);
 
   async function getToDos(){
@@ -31,12 +32,29 @@ function App() {
     inputTextRef.current.value = "";
   }
 
+  async function handleCheckboxClick(todoID, checkedValue){
+    const selectedToDo = todos.find(todo => todo.id === todoID);
+    setIsChecked( isChecked => !isChecked);
+    console.log(selectedToDo);
+    console.log(isChecked);
+    const response = await axios.put(`/api/todos/${todoID}`, { isComplete : checkedValue });
+    
+    console.log(response);
+    // getToDos();
+  }
 
   return (
       <Container className="App">
         <Header />
-        <InputForm inputTextRef={inputTextRef} handleAddToDo={handleAddToDo} />
-        <ToDoList todos={todos}/>
+        <InputForm 
+          inputTextRef={inputTextRef} 
+          handleAddToDo={handleAddToDo} 
+        />
+        <ToDoList 
+          todos={todos}
+          isChecked={isChecked}
+          handleCheckboxClick={handleCheckboxClick} 
+          />
       </Container>
 
 
