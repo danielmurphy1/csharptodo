@@ -57,8 +57,12 @@ namespace API.Controllers
 
         // DELETE api/<ToDosController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ToDoModel Delete(int id)
         {
+            var deleteToDoService = new DeleteToDoService();
+            int todoId = id;
+
+            return deleteToDoService.DeleteToDo(todoId);
         }
     }
 }
