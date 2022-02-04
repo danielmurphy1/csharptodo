@@ -37,6 +37,12 @@ function App() {
     getToDos();
   }
 
+  async function handleDeleteToDo(todoID){
+    todos.find(todo => todo.id === todoID);
+    await axios.delete(`/api/todos/${todoID}`);
+    getToDos();
+  }
+
   return (
       <Container className="App">
         <Header />
@@ -46,7 +52,8 @@ function App() {
         />
         <ToDoList 
           todos={todos}
-          handleCheckboxClick={handleCheckboxClick} 
+          handleCheckboxClick={handleCheckboxClick}
+          handleDeleteToDo={handleDeleteToDo}
           />
       </Container>
 
