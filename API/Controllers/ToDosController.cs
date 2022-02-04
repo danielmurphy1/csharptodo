@@ -46,8 +46,13 @@ namespace API.Controllers
 
         // PUT api/<ToDosController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ToDoModel Put([FromBody] ToDoModel todo)
         {
+            var updateToDoService = new UpdateToDoService();
+            int id = todo.Id;
+            var isComplete = todo.IsComplete;
+
+            return updateToDoService.UpdateToDo(id, isComplete);
         }
 
         // DELETE api/<ToDosController>/5
