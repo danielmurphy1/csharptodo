@@ -31,7 +31,7 @@ namespace Infrastructure.ToDoQueryServices
             {
                 updatedTodo = new ToDoModel
                 {
-                    Id = id,
+                    Id = reader.GetInt32(0),
                     Text = reader.GetString(1),
                     IsComplete = isComplete,
                     CreatedAt = reader.GetDateTime(3)
