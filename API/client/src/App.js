@@ -10,7 +10,6 @@ import axios from 'axios';
 
 function App() {
   const inputTextRef = useRef();
-  const [ isChecked, setIsChecked ] = useState(false);
   const [ todos, setTodos ] = useState([]);
 
   async function getToDos(){
@@ -34,13 +33,8 @@ function App() {
 
   async function handleCheckboxClick(todoID, checkedValue){
     const selectedToDo = todos.find(todo => todo.id === todoID);
-    setIsChecked( isChecked => !isChecked);
-    console.log(selectedToDo);
-    console.log(isChecked);
-    const response = await axios.put(`/api/todos/${todoID}`, { isComplete : checkedValue });
-    
-    console.log(response);
-    // getToDos();
+    await axios.put(`/api/todos/${todoID}`, { isComplete : checkedValue });
+    getToDos();
   }
 
   return (
@@ -52,7 +46,6 @@ function App() {
         />
         <ToDoList 
           todos={todos}
-          isChecked={isChecked}
           handleCheckboxClick={handleCheckboxClick} 
           />
       </Container>
