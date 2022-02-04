@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="DotNetEnv" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.13" />
     <PackageReference Include="Npgsql" Version="5.0.11" />
   </ItemGroup>

@@ -5,7 +5,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "c427a886-57ac-4935-adf4-b14df0c3d639": {
+      "ProjectGuid": "c427a886-57ac-4935-adf4-b14df0c3d639",
+      "DisplayName": "API",
+      "ColorIndex": 0
+    },
+    "838bcd1b-1594-4e13-99cd-53a9d6fe7697": {
+      "ProjectGuid": "838bcd1b-1594-4e13-99cd-53a9d6fe7697",
+      "DisplayName": "Core",
+      "ColorIndex": 1
+    },
+    "a6294419-55d3-4c54-ade0-814ceebde571": {
+      "ProjectGuid": "a6294419-55d3-4c54-ade0-814ceebde571",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 3
 }
