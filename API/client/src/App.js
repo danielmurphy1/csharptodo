@@ -12,16 +12,6 @@ function App() {
   const inputTextRef = useRef();
   const [ todos, setTodos ] = useState([]);
 
-  function handleAddToDo(event){
-    event.preventDefault();
-
-    const enteredToDoInput = inputTextRef.current.value;
-    console.log(enteredToDoInput);
-    setTodos([...todos, enteredToDoInput]);
-    console.log(todos);
-    inputTextRef.current.value = "";
-  }
-
   async function getToDos(){
     const response = await axios.get('/api/todos');
     const newToDos = response.data;
@@ -31,6 +21,16 @@ function App() {
   useEffect(() => {
     getToDos();
   }, []);
+  
+  async function handleAddToDo(event){
+    event.preventDefault();
+
+    const enteredToDoInput = inputTextRef.current.value;
+    await axios.post('/api/todos', { text: enteredToDoInput });
+    getToDos();
+    inputTextRef.current.value = "";
+  }
+
 
   return (
       <Container className="App">
