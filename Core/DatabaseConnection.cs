@@ -16,8 +16,7 @@ namespace Core
         public NpgsqlConnection GetConnection()
         {
             Env.TraversePath().Load();
-            //string connString = "host=localhost;Port=5432;Database=test_todos;Username=postgres;Password=pitdline";
-            string connString = System.Environment.GetEnvironmentVariable("SECRET");
+            string connString = Environment.GetEnvironmentVariable("DEVELOPMENT_CONNECTION_STRING");
 
             NpgsqlConnection conn = new NpgsqlConnection(connString);
             conn.Open();
