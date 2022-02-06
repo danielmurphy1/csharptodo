@@ -16,7 +16,7 @@ namespace Infrastructure.ToDoQueryServices
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
             var newTodo = new ToDoModel();
-            using var command = new NpgsqlCommand("INSERT INTO test_todos_info (todo_text) VALUES (@p1) RETURNING *", connection)
+            using var command = new NpgsqlCommand("INSERT INTO todos_info (todo_text) VALUES (@p1) RETURNING *", connection)
             {
                 Parameters =
                 {

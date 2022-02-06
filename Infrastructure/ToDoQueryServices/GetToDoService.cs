@@ -16,7 +16,7 @@ namespace Infrastructure.ToDoQueryServices
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
             var todos = new List<ToDoModel>();
-            using NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM test_todos_info ORDER BY id", connection);
+            using NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM todos_info ORDER BY id", connection);
             using var reader = command.ExecuteReader();
            
             while (reader.Read())

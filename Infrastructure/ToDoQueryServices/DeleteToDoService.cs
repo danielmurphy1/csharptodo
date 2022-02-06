@@ -16,7 +16,7 @@ namespace Infrastructure.ToDoQueryServices
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
             var deletedToDo = new ToDoModel();
-            using var command = new NpgsqlCommand("DELETE FROM test_todos_info  WHERE id = @p1 RETURNING *", connection)
+            using var command = new NpgsqlCommand("DELETE FROM todos_info  WHERE id = @p1 RETURNING *", connection)
             {
                 Parameters =
                 {

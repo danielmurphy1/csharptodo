@@ -16,7 +16,7 @@ namespace Infrastructure.ToDoQueryServices
             DatabaseConnection dbConnection = new DatabaseConnection();
             var connection = dbConnection.GetConnection();
             var updatedTodo = new ToDoModel();
-            using var command = new NpgsqlCommand("UPDATE test_todos_info SET is_complete = @p1 WHERE id = @p2 RETURNING *", connection)
+            using var command = new NpgsqlCommand("UPDATE todos_info SET is_complete = @p1 WHERE id = @p2 RETURNING *", connection)
             {
                 Parameters =
                 {
