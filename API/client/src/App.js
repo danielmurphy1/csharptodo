@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from './Components/Header';
 import InputForm from './Components/InputForm';
@@ -56,9 +56,7 @@ function App() {
           handleDeleteToDo={handleDeleteToDo}
           />
       </Container>
-
-
   );
-}
+};
 
 export default App;

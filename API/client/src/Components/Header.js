@@ -10,7 +10,6 @@ function Header() {
             <h3>Completed Items Can Be Deleted by Clicking the Delete Button</h3>
         </Container>
     );
-
 };
 
 export default Header;
