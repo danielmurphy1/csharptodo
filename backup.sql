@@ -47,10 +47,10 @@ SET default_table_access_method = heap;
 
 --
 -- TOC entry 201 (class 1259 OID 41677)
--- Name: test_todos_info; Type: TABLE; Schema: public; Owner: postgres
+-- Name: todos_info; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.test_todos_info (
+CREATE TABLE public.todos_info (
     id integer NOT NULL,
     todo_text character varying(300) NOT NULL,
     is_complete boolean DEFAULT false,
@@ -58,14 +58,14 @@ CREATE TABLE public.test_todos_info (
 );
 
 
-ALTER TABLE public.test_todos_info OWNER TO postgres;
+ALTER TABLE public.todos_info OWNER TO postgres;
 
 --
 -- TOC entry 200 (class 1259 OID 41675)
--- Name: test_todos_info_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: todos_info_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
-CREATE SEQUENCE public.test_todos_info_id_seq
+CREATE SEQUENCE public.todos_info_id_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -74,32 +74,32 @@ CREATE SEQUENCE public.test_todos_info_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.test_todos_info_id_seq OWNER TO postgres;
+ALTER TABLE public.todos_info_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 2991 (class 0 OID 0)
 -- Dependencies: 200
--- Name: test_todos_info_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: todos_info_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
-ALTER SEQUENCE public.test_todos_info_id_seq OWNED BY public.test_todos_info.id;
+ALTER SEQUENCE public.todos_info_id_seq OWNED BY public.todos_info.id;
 
 
 --
 -- TOC entry 2850 (class 2604 OID 41680)
--- Name: test_todos_info id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: todos_info id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.test_todos_info ALTER COLUMN id SET DEFAULT nextval('public.test_todos_info_id_seq'::regclass);
+ALTER TABLE ONLY public.todos_info ALTER COLUMN id SET DEFAULT nextval('public.todos_info_id_seq'::regclass);
 
 
 --
 -- TOC entry 2854 (class 2606 OID 41684)
--- Name: test_todos_info test_todos_info_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: todos_info todos_info_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.test_todos_info
-    ADD CONSTRAINT test_todos_info_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.todos_info
+    ADD CONSTRAINT todos_info_pkey PRIMARY KEY (id);
 
 
 -- Completed on 2022-01-30 21:19:49
