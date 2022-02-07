@@ -16,7 +16,7 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
-	<ItemGroup>
+    <ItemGroup>
 		<None Update="client\build\**">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
