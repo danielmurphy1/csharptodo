@@ -4,7 +4,7 @@ _Web Based To Do Application_
 
 Create a To Do List and Mark Items Off As You Complete Them
 
-Start Trading Today! [Link to Application](https://dmurphytodoapp.azurewebsites.net/) 
+View To Do Application Live [Link to Application](https://dmurphytodoapp.azurewebsites.net/) 
 
 
 ## Instructions
