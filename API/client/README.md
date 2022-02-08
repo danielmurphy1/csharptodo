@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Full Stack To Do Application 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Web Based To Do Application_
 
-## Available Scripts
+Create a To Do List and Mark Items Off As You Complete Them
 
-In the project directory, you can run:
+Start Trading Today! [Link to Application](https://dmurphytodoapp.azurewebsites.net/) 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To Download and Run Locally
 
-### `npm test`
+I. Clone SQL Databse Schema
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Download PosgreSQL/PGAdmin 
+2. Run the databse creation script in the `backup.sql` file in the `root` directory
 
-### `npm run build`
+II. Install Files to Run Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone code locally from GitHub
+2. CD into `API\client` directory
+3. Run `npm i` in `client` directory
+4. Rename `.env_sample` to `.env` file and replace `DEVELOPMENT_CONNECTION_STRING with the connection string for your local PostgreSQL database.
+5. Uncomment line 19 and comment out line 20 in `Core\DatabaseConnection.cs`
+6. CD into `API` directory.
+6. Run `dotnet watch run` in `API` directory to start server.
+7. Open browser at `http://localhost:5000/`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Application Screenshot
+![Application Screenshot](https://github.com/danielmurphy1/csharptodo/blob/main/images/csharptodo.JPG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies/Design
 
-### `npm run eject`
+### Technology Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- JavaScript with React Framework, CSS with Boostrap Library - Front End Stack
+- C# with ASP.NET Web Application (.NET Framework) - Backend Stack and Internal/REST API
+- PostgreSQL - Database with Npgsql Nuget Package
+- Microsoft Azure - Hosting platform
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Summary
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application is my second since I have begun learning C# and my first using .NET and also my first fullstack application using C#/ASP.NET Web Application. 
 
-### Code Splitting
+To create this application I continued to expand on my C# knowledge as well as learning .NET Web API from the beginning. I have created a couple of seperate To Do applications in the past; however, this is the first one that I have created using a SQL database and to have full CRUD capabilities (previously relying on local storage for data persistence).  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In creating this application I learned more about how data and requests flow between the client, server, and databse. I also learned more about how to split the backend logic between the REST API endpoint controllers and the services that each endpoint calls to perform database operations. 
 
-### Analyzing the Bundle Size
+As this was my first application deployed to Microsoft Azure, I also learned how that deployment process works. More importantly, I learned how to use Azure's logging to identify and fix problems during the deployment process. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+I look forward to continue my learning of C# and the .NET framework in future projects. 
 
-### Making a Progressive Web App
+### Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Dan Murphy, Full-Stack Developer, https://www.linkedin.com/in/daniel-murphy-055/, https://danielmurphy.dev
