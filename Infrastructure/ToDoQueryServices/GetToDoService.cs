@@ -11,27 +11,31 @@ namespace Infrastructure.ToDoQueryServices
 {
     public class GetToDoService
     {
+        private static NpgsqlConnection _npgsqlconnection;
         public List<ToDoModel> GetTodos()
         {
             DatabaseConnection dbConnection = new DatabaseConnection();
-            var connection = dbConnection.GetConnection();
-            var todos = new List<ToDoModel>();
-            using NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM todos_info ORDER BY id", connection);
-            using var reader = command.ExecuteReader();
-           
-            while (reader.Read())
+            using (var connection = dbConnection.GetConnection())
             {
-                ToDoModel todo = new ToDoModel
-                {
-                    Id = reader.GetInt32(0),
-                    Text = reader.GetString(1),
-                    IsComplete = reader.GetBoolean(2),
-                    CreatedAt = reader.GetDateTime(3)
-                };
-                todos.Add(todo);
-            }
+                var todos = new List<ToDoModel>();
+                using NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM todos_info ORDER BY id", connection);
 
-            return todos;
+                using var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    ToDoModel todo = new ToDoModel
+                    {
+                        Id = reader.GetInt32(0),
+                        Text = reader.GetString(1),
+                        IsComplete = reader.GetBoolean(2),
+                        CreatedAt = reader.GetDateTime(3)
+                    };
+                    todos.Add(todo);
+                }
+
+                return todos;
+            } ;
+            
         }
     }
 }

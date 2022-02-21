@@ -12,7 +12,7 @@ namespace Core
 {
     public class DatabaseConnection
     {
-        
+
         public NpgsqlConnection GetConnection()
         {
             Env.TraversePath().Load();
