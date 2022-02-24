@@ -20,15 +20,15 @@ SET row_security = off;
 
 --
 -- TOC entry 2990 (class 1262 OID 41661)
--- Name: test_todos; Type: DATABASE; Schema: -; Owner: postgres
+-- Name: todos; Type: DATABASE; Schema: -; Owner: postgres
 --
 
-CREATE DATABASE test_todos WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'English_United States.1252';
+CREATE DATABASE todos WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'English_United States.1252';
 
 
-ALTER DATABASE test_todos OWNER TO postgres;
+ALTER DATABASE todos OWNER TO postgres;
 
-\connect test_todos
+\connect todos
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
